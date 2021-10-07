@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie responsive</title>
+
+<style>
+    body {
+    color: #232323;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 95%;
+    margin: auto;
+}
+#grid1 {
+    display: grid;
+    margin: 50px 0;
+    grid-template-columns: repeat(5, 1fr); 
+    grid-template-rows: 1fr;
+    text-align: center;
+    justify-items: center;
+    justify-content: space-between;
+    row-gap: 80px;
+    column-gap: 5%;
+}
+img {
+    width: 100%;
+}
+.box {
+    background: linear-gradient(#6ba2d8 80%, #faf7ff 20%);
+    border-radius: 5%;
+    box-shadow: 0px 0px 10px #dddcdc;
+}
+.img {
+    height: 80%;
+    } 
+.text {
+    height: 20%;
+    margin: 2.5% 0 0 0;
+    }
+@media screen and (max-width: 1024px) {
+    body {
+        width: 90%;
+        margin: auto;
+    }
+    #grid1 {
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        margin: 50px auto;
+        column-gap: 10%;
+    }  
+}
+@media screen and (max-width: 414px){
+    body {
+        width: 80%;
+        margin: auto;
+    }
+    #grid1 {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        margin: 50px auto; 
+    }
+} 
+</style>           
+    
+</head>
+<body>
+    <h1>Gallery Heading</h1>
+
+    <div id=grid1>
+        <div class="box">
+            <div class="img"><img src="placeholder-image.png" alt="Image"></div>
+            <div class="text">Image Title</div>
+        </div>
+        <div class="box">
+            <div class="img"><img src="placeholder-image.png" alt="Image"></div>
+            <div class="text">Image Title</div>
+        </div>
+        <div class="box">
+            <div class="img"><img src="placeholder-image.png" alt="Image"></div>
+            <div class="text">Image Title</div>
+        </div>
+        <div class="box">
+            <div class="img"><img src="placeholder-image.png" alt="Image"></div>
+            <div class="text">Image Title</div>
+        </div>
+        <div class="box">
+            <div class="img"><img src="placeholder-image.png" alt="Image"></div>
+            <div class="text">Image Title</div>
+        </div>
+        <div class="box">
+            <div class="img"><img src="placeholder-image.png" alt="Image"></div>
+            <div class="text">Image Title</div>
+        </div>
+        <div class="box">
+            <div class="img"><img src="placeholder-image.png" alt="Image"></div>
+            <div class="text">Image Title</div>
+        </div>
+        <div class="box">
+            <div class="img"><img src="placeholder-image.png" alt="Image"></div>
+            <div class="text">Image Title</div>
+        </div>
+        <div class="box">
+            <div class="img"><img src="placeholder-image.png" alt="Image"></div>
+            <div class="text">Image Title</div>
+        </div>
+        <div class="box">
+            <div class="img"><img src="placeholder-image.png" alt="Image"></div>
+            <div class="text">Image Title</div>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+</body>
+</html>
